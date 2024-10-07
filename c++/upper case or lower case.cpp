@@ -1,16 +1,14 @@
 #include <iostream>
-#include <cctype>  
+#include<string>
+#include<algorithm>
 using namespace std;
 int main() {
-    char ch;
-    cout << "Enter a character: ";
-    cin >> ch;
-    if (isupper(ch)) {
-        cout << ch << " is an uppercase letter." << endl;
-    }
-    else if (islower(ch)) {
-        cout << ch << " is a lowercase letter." << endl;
-    }
+    string str;
+    cout<<"enter the string:";
+    cin>>str;
+    transform(str.begin(),str.end(),str.begin(),::tolower);
+    cout<<"Lowercase:"<<str<<"\n";
+    transform(str.begin(),str.end(),str.begin(),::toupper);
+    cout<<"Uppercase:"<<str<<"\n";
     return 0;
 }
-
