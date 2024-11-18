@@ -10,9 +10,9 @@ int main() {
         temp /= 10;
     }
     if (num % sum == 0)
-        cout << num << " is a Harshad Number." << endl;
+        cout << " it is a Harshad Number." << endl;
     else
-        cout << num << " is not a Harshad Number." << endl;
+        cout << " it is not a Harshad Number." << endl;
     return 0;
 }
-
+  b     

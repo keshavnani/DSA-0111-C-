@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int removeDuplicates(int arr[], int n) {
+int removeduplicates(int arr[], int n) {
     if (n == 0 || n == 1)
         return n;
     int temp[n];
@@ -18,15 +18,15 @@ int removeDuplicates(int arr[], int n) {
 }
 int main() {
     int n;
-    cout << "Enter the number of elements in the sorted array: ";
+    cout << "enter the number of elements in the sorted array: ";
     cin >> n;
     int arr[n];
     cout << "Enter the elements of the sorted array:\n";
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int newSize = removeDuplicates(arr, n);
-    cout << "Array after removing duplicates: ";
+    int newSize = removed     uplicates(arr, n);
+    cout << "array after removing duplicates: ";
     for (int i = 0; i < newSize; i++) {
         cout << arr[i] << " ";
     }
